@@ -25,3 +25,6 @@ nbdist/
 
 ### Visual Studio Code ###
 *.code-workspace
+
+### SDKMAN! ###
+.sdkmanrc
