@@ -1,6 +1,7 @@
 package hello;
 
-import org.graalvm.polyglot.*;
+import org.graalvm.polyglot.Context;
+import org.graalvm.polyglot.Value;
 
 public class HelloWorldPY {
     public static void main(String[] args) {
@@ -10,8 +11,7 @@ public class HelloWorldPY {
             final Value array = polyglot.eval("python", "[10,22,33,42,49,55]");
             for (int i = 0; i < array.getArraySize(); i++) {
                 final int number = array.getArrayElement(i).asInt();
-                final String message =
-                    "This number came from a Python array: " + number + "!";
+                final String message = "This number came from a Python array: " + number + "!";
                 System.out.println(message);
             }
         }
