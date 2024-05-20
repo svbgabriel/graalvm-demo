@@ -1,6 +1,9 @@
 package app;
 
-import org.graalvm.polyglot.*;
+import org.graalvm.polyglot.Context;
+import org.graalvm.polyglot.Value;
+
+import java.util.OptionalInt;
 
 public class Operations {
 
@@ -28,7 +31,11 @@ public class Operations {
         return execute("multi", a, b);
     }
 
-    public int div(int a, int b) {
-        return execute("div", a, b);
+    public OptionalInt div(int a, int b) {
+        if (b == 0) {
+           return OptionalInt.empty();
+        }
+
+        return OptionalInt.of(execute("div", a, b));
     }
 }

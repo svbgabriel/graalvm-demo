@@ -8,5 +8,6 @@ public class Calculator {
         System.out.println(operations.sub(9, 2));
         System.out.println(operations.multi(3, 3));
         System.out.println(operations.div(4, 2));
+        System.out.println(operations.div(4, 0));
     }
 }
