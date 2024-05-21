@@ -1,4 +1,4 @@
-package app;
+package io.github.svbgabriel;
 
 public class Constants {
 

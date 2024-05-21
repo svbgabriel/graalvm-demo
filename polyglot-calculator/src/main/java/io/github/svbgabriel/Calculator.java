@@ -1,4 +1,4 @@
-package app;
+package io.github.svbgabriel;
 
 public class Calculator {
     public static void main(String[] args) {

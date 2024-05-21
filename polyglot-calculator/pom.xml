@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>calculator</groupId>
+    <groupId>io.github.svbgabriel</groupId>
     <artifactId>polyglot-calculator</artifactId>
     <version>1.0.0</version>
 
@@ -11,7 +11,7 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <graalvm.nativeImagePlugin.version>21.2.0</graalvm.nativeImagePlugin.version>
-        <main.class>app.Calculator</main.class>
+        <main.class>io.github.svbgabriel.Calculator</main.class>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -84,7 +84,7 @@
                 </executions>
                 <configuration>
                     <imageName>${project.artifactId}</imageName>
-                    <mainClass>app.Calculator</mainClass>
+                    <mainClass>io.github.svbgabriel.Calculator</mainClass>
                     <buildArgs>
                         <buildArg>--no-fallback</buildArg>
                         <buildArg>-J-Xmx20g</buildArg>
