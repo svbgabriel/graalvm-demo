@@ -1,4 +1,4 @@
-package hello;
+package io.github.svbgabriel;
 
 import org.graalvm.polyglot.Context;
 import org.graalvm.polyglot.Value;
